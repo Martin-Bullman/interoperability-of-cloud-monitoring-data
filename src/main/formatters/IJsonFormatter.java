@@ -1,9 +1,9 @@
 package main.formatters;
 
-import org.json.java.JSONObject;
-
 import java.util.HashMap;
 import java.util.ArrayList;
+
+import org.json.java.JSONObject;
 
 /**
  * This interface defines methods for formatting and converting data in JSON format.
@@ -21,33 +21,33 @@ public interface IJsonFormatter {
 	 *
 	 * @return A CSV representation of the data.
 	 */
-	public String convertToCsv();
+	public String convertToCsv ();
 
 	/**
 	 * Converts data to an ArrayList of strings.
 	 *
 	 * @return An ArrayList representation of the data.
 	 */
-	public ArrayList<String> convertToArrayList();
+	public ArrayList<String> convertToArrayList ();
 
 	/**
 	 * Converts data to a HashMap.
 	 *
 	 * @return A HashMap representation of the data.
 	 */
-	public HashMap<String, Object> convertToHashMap();
+	public HashMap<String, Object> convertToHashMap ();
 
 	/**
 	 * Converts data to a JSON object.
 	 *
 	 * @return A JSON representation of the data as a JSONObject.
 	 */
-	public JSONObject convertToJsonObject();
+	public JSONObject convertToJsonObject ();
 
 	/**
 	 * Converts data to an XML string.
 	 *
 	 * @return An XML representation of the data.
 	 */
-	public String convertToXml();
+	public String convertToXml ();
 }

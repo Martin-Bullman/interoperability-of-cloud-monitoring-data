@@ -22,8 +22,6 @@ public class CborDeserializer {
 	 *
 	 * @param bytesArray The byte array containing serialized data in CBOR format.
 	 * @return The deserialized CBOR object.
-	 *
-	 * @throws CborParseException if there's an issue with parsing the CBOR data.
 	 */
 	private CborObject deserialize (final byte[] bytesArray) {
 		CborObject deserializedData = null;
@@ -46,8 +44,6 @@ public class CborDeserializer {
 	 *
 	 * @param arrayListBytesArray The serialized ArrayList.
 	 * @return The deserialized CBOR object.
-	 *
-	 * @throws CborParseException if there's an issue with parsing the CBOR data.
 	 */
 	public CborObject deserializeArrayList (final byte[] arrayListBytesArray) {
 		return deserialize(arrayListBytesArray);
@@ -57,9 +53,7 @@ public class CborDeserializer {
 	 * Deserializes a HashMap byte array into a CBOR object.
 	 *
 	 * @param hashMapBytesArray The serialized HashMap.
-	 * @return The deserialized CBOR object.
-	 *
-	 * @throws CborParseException if there's an issue with parsing the CBOR data.
+	 * @return The deserialized CBOR object..
 	 */
 	public CborObject deserializeHashMap (final byte[] hashMapBytesArray) {
 		return deserialize(hashMapBytesArray);
@@ -70,8 +64,6 @@ public class CborDeserializer {
 	 *
 	 * @param stringBytesArray The serialized String.
 	 * @return The deserialized CBOR object.
-	 *
-	 * @throws CborParseException if there's an issue with parsing the CBOR data.
 	 */
 	public CborObject deserializeString (final byte[] stringBytesArray) {
 		return deserialize(stringBytesArray);

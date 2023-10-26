@@ -85,13 +85,13 @@ public class ArrayListFormatter implements IArrayListFormatter {
 	 * @return - CSV string of data
 	 */
 	public String convertToCsv (char delimiter) {
-		StringBuffer csvString = new StringBuffer();
+		StringBuilder csvString = new StringBuilder();
 		
 		for (int i = 0; i < monitoringData.size() - 1 ; i++) {
 			String value = monitoringData.get(i);
 			
 		    if (! value.equals(NEW_LINE_MARKER)) {
-		    	csvString.append(value + delimiter);
+		    	csvString.append(value).append(delimiter);
 		    }
 		    else {
 		    	csvString.append(NEW_LINE_SEPARATOR);

@@ -127,4 +127,20 @@ public class FileHelper {
 		
 		return bytes;
 	}
+
+	/**
+	 * Extracts the file type (extension) from a given file name.
+	 *
+	 * @param fileName The name of the file.
+	 * @return The file type (extension) if found, or null if there is no extension.
+	 */
+	public String getFileType (String fileName) {
+		int i = fileName.lastIndexOf('.');
+
+		if (i > 0) {
+			return fileName.substring(i+1);
+		}
+
+		return null;
+	}
 }

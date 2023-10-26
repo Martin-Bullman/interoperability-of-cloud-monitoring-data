@@ -104,7 +104,7 @@ public class HashMapFormatter implements IHashMapFormatter {
 	 * @return A string representing the data in CSV format.
 	 */
 	public String convertToCsv () {
-		StringBuffer csvString = new StringBuffer();
+		StringBuilder csvString = new StringBuilder();
 	    int keySetSize = hashMapData.keySet().size();
 		int counter = 1;
 		
@@ -117,7 +117,7 @@ public class HashMapFormatter implements IHashMapFormatter {
 			newString  = newString.replace( "]", "");
 			
 			if (keySetSize != counter) {
-				csvString.append(newString + NEW_LINE_SEPARATOR);
+				csvString.append(newString).append(NEW_LINE_SEPARATOR);
 			}
 			else {
 				csvString.append(newString);
@@ -144,9 +144,7 @@ public class HashMapFormatter implements IHashMapFormatter {
 		for (Map.Entry<String, Object> entry : hashMapData.entrySet()) {
 			String[] array = (String[]) entry.getValue();
 
-			for (int i = 0; i < array.length; i++) {
-				strings.add(array[i]);
-			}
+            Collections.addAll(strings, array);
 
 			strings.add(NEW_LINE_MARKER);
 		}
@@ -164,11 +162,11 @@ public class HashMapFormatter implements IHashMapFormatter {
 	public void printHashMap () {
 		for (Map.Entry<String, Object> entry : hashMapData.entrySet()) {
 			String[] array = (String[]) entry.getValue();
-			String printData = "";
-			
-			for ( int i = 0; i < array.length; i++) {
-				printData += array[i] + CSV_DELIMITER;
-			}
+			StringBuilder printData = new StringBuilder();
+
+            for (String string : array) {
+                printData.append(string).append(CSV_DELIMITER);
+            }
 			
 		    System.out.println("Key = " + entry.getKey() + ", Value = " + printData);
 	    }

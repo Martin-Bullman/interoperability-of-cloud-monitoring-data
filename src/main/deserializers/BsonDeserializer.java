@@ -87,7 +87,7 @@ public class BsonDeserializer {
 	/**
 	 * Deserializes a byte array into a JSONObject representing a String.
 	 * 
-	 * @param stringBytesArray - The serialized JSONObject.
+	 * @param jsonBytesArray - The serialized JSONObject.
 	 * @return - Deserialized JSONObject.
 	 */
 	public JSONObject deserializeString(final byte[] jsonBytesArray) {

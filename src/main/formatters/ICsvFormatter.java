@@ -19,14 +19,14 @@ public interface ICsvFormatter {
 	 *
 	 * @return An ArrayList containing CSV data as strings.
 	 */
-	public ArrayList<String> convertToArrayList();
+	public ArrayList<String> convertToArrayList ();
 
 	/**
 	 * Converts data in CSV format into a HashMap where keys are strings (e.g., column names) and values are objects (e.g., row data).
 	 *
 	 * @return A HashMap representing CSV data.
 	 */
-	public HashMap<String, Object> convertToHashMap();
+	public HashMap<String, Object> convertToHashMap ();
 
 	/**
 	 * Converts data in CSV format into a JSON representation.
@@ -34,12 +34,12 @@ public interface ICsvFormatter {
 	 * @param csvDelimiter The character used as a delimiter in the CSV data.
 	 * @return A string containing CSV data converted to JSON.
 	 */
-	public String convertToJson(char csvDelimiter);
+	public String convertToJson (char csvDelimiter);
 
 	/**
 	 * Converts data in CSV format into an XML representation.
 	 *
 	 * @return A string containing CSV data converted to XML.
 	 */
-	public String convertToXml();
+	public String convertToXml ();
 }

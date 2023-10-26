@@ -2,8 +2,13 @@ package main.formatters;
 
 import main.helpers.FileHelper;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.io.IOException;
+import java.util.ArrayList;
+
 import org.json.java.*;
 
 import com.fasterxml.jackson.core.*;
@@ -136,11 +141,11 @@ public class JsonFormatter implements IJsonFormatter {
 	 * @return A well-formatted XML string representing the JSON data or file content.
 	 */
 	public String convertToXml () {
-		String xmlString        = XML.toString( new JSONObject( "{\"root\" : " + (inputString.equals( "" ) ? fileToString( ) : inputString) + "}" ) );
-		DefaultXmlFormatter xml = new DefaultXmlFormatter();
-		xmlString               = xmlString.replace( "\n", "" );
+		String xmlString = XML.toString(new JSONObject("{\"root\" : " + (inputString.isEmpty() ? fileToString() : inputString) + "}"));
+		XmlFormatter xml = new XmlFormatter();
+		xmlString = xmlString.replace( "\n", "" );
 
-		return  xml.prettyPrintXmlString( xmlString );
+		return  xml.prettyPrintXmlString(xmlString);
 	}
 
 	/**

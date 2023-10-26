@@ -33,9 +33,9 @@ public class MessagePackDeserializer {
 	 *
 	 * @param bytesArray Byte array containing serialized data.
 	 */
-	public void setup (final byte[] bytes) {
+	public void setup (final byte[] bytesArray) {
 		MessagePack msgpack = new MessagePack();
-		ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
+		ByteArrayInputStream bais = new ByteArrayInputStream(bytesArray);
         this.unpacker = msgpack.createUnpacker(bais);
 	}
 

@@ -49,24 +49,22 @@ public class XmlFormatter implements IXmlFormatter {
 	/**
 	 * XML data represented as a Java string.
 	 */
-	private String inputString = "";
+	private final String inputString = "";
 
 	/**
 	 * hashMap to store XML data.
 	 */
-	private HashMap<String, Object> xmlHashMap = new HashMap<String, Object>();
+	private final HashMap<String, Object> xmlHashMap = new HashMap<String, Object>();
 
 	/**
 	 * Constructor which takes a string of monitoring data as input.
-	 *
-	 * @param inputString The monitoring data.
 	 */
-	public XmlFormatter (String inputString) {
-		this.inputString = inputString;
+	public XmlFormatter () {
+
 	}
 
 	/**
-	 * Constructor which takes a XML file of monitoring data as input.
+	 * Constructor which takes an XML file of monitoring data as input.
 	 *
 	 * @param inputFile The monitoring data.
 	 */
@@ -160,7 +158,7 @@ public class XmlFormatter implements IXmlFormatter {
 
 	/**
 	 * Converts XML data to a JSON string with pretty formatting.
-	 *
+	 * <p>
 	 * This method parses XML data from a file and converts it to a JSON string while
 	 * applying pretty formatting for improved readability.
 	 *
@@ -202,8 +200,8 @@ public class XmlFormatter implements IXmlFormatter {
     }
 
 	/**
-	 * Reads the contents of a XML and returns it as a string.
-	 *
+	 * Reads the contents of an XML and returns it as a string.
+	 * <p>
 	 * This method reads the contents of the specified XML file and returns them as a single string.
 	 *
 	 * @return The contents of the XML file as a string.

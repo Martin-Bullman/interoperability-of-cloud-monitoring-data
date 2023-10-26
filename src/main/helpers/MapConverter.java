@@ -23,7 +23,7 @@ public class MapConverter {
     	
     	for (Map.Entry<String, Object> entry : hashMap.entrySet()) {
     		try {
-    	        newMap.put(entry.getKey(), (String) entry.getValue().toString());
+    	        newMap.put(entry.getKey(), entry.getValue().toString());
     	    }
     		catch(ClassCastException exception) {
 				exception.printStackTrace();

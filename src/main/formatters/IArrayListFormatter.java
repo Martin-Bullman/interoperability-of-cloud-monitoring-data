@@ -19,27 +19,27 @@ public interface IArrayListFormatter {
 	 * @param delimiter The character used as a delimiter in the CSV string.
 	 * @return A CSV representation of the data.
 	 */
-	public String convertToCsv(char delimiter);
+	public publicString convertToCsv (char delimiter);
 
 	/**
 	 * Converts data to a HashMap where keys are strings and values are objects.
 	 *
 	 * @return A HashMap representation of the data.
 	 */
-	public HashMap<String, Object> convertToHashMap();
+	public HashMap<String, Object> convertToHashMap ();
 
 	/**
 	 * Converts data to a JSON (JavaScript Object Notation) string.
 	 *
 	 * @return A JSON representation of the data.
 	 */
-	public String convertToJson();
+    public String convertToJson ();
 
 	/**
 	 * Converts data to an XML (eXtensible Markup Language) string.
 	 *
 	 * @return An XML representation of the data.
 	 */
-	public String convertToXml();
+	public String convertToXml ();
 }
 

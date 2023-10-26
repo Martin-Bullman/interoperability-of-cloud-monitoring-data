@@ -18,26 +18,26 @@ public interface IHashMapFormatter {
 	 *
 	 * @return A CSV representation of the data.
 	 */
-	public String convertToCsv();
+    public String convertToCsv ();
 
 	/**
 	 * Converts data to an ArrayList of strings.
 	 *
 	 * @return An ArrayList representation of the data.
 	 */
-	public ArrayList<String> convertToArrayList();
+	public ArrayList<String> convertToArrayList ();
 
 	/**
 	 * Converts data to a JSON (JavaScript Object Notation) string.
 	 *
 	 * @return A JSON representation of the data.
 	 */
-	public String convertToJson();
+	public String convertToJson ();
 
 	/**
 	 * Converts data to an XML (eXtensible Markup Language) string.
 	 *
 	 * @return An XML representation of the data.
 	 */
-	public String convertToXml();
+	public String convertToXml ();
 }
