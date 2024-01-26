@@ -19,7 +19,7 @@ public interface IArrayListFormatter {
 	 * @param delimiter The character used as a delimiter in the CSV string.
 	 * @return A CSV representation of the data.
 	 */
-	public publicString convertToCsv (char delimiter);
+	public String convertToCsv (char delimiter);
 
 	/**
 	 * Converts data to a HashMap where keys are strings and values are objects.
