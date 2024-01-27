@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.FileInputStream;
 
 import java.util.Properties;
+
 /**
  * The `MessageSenderMain` class is the entry point for the MessageSender application.
  * <p>

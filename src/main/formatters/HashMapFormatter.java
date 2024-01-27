@@ -3,10 +3,7 @@ package main.formatters;
 import main.helpers.FileHelper;
 
 import java.io.File;
-import java.util.Map;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.*;
 
 /**
  * Class which provides methods to format and manipulate HashMap monitoring data.

@@ -1,11 +1,11 @@
 package tests;
 
-import main.deserializers.*;
-import main.formatters.*;
-import main.serializers.*;
-
 import java.io.File;
 import java.util.List;
+
+import main.formatters.*;
+import main.serializers.*;
+import main.deserializers.*;
 
 /**
  * The `Tester` class serves as a demonstration and testing environment for various data interchange formatters and
@@ -76,7 +76,7 @@ public class DataInterchangeTester {
     	System.out.println();
 
 
-        //Tester For Comma Separate Values data interchange Class.
+        //  Tester For Comma Separate Values data interchange Class.
 		CsvFormatter csv = new CsvFormatter(new File(csvFile));
 
     	System.out.println("Convert CSV to ArrayList.");
