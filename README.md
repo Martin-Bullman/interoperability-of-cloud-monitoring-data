@@ -41,16 +41,17 @@
 
 ##  Quick Links
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running interoperability-of-cloud-monitoring-Data](#-running-interoperability-of-cloud-monitoring-Data)
->   - [ Tests](#-tests)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
+> - [Overview](#overview)
+> - [Features](#features)
+> - [Repository Structure](#repository-structure)
+> -  [Data Sets](#data-sets)
+> - [Getting Started](#getting-started)
+>   - [Installation](#installation)
+>   - [Running interoperability-of-cloud-monitoring-Data](#running-interoperability-of-cloud-monitoring-Data)
+>   - [Tests](#tests)
+> - [Contributing](#contributing)
+> - [License](#license)
+> - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -106,21 +107,23 @@ Leveraging RabbitMQ's role in OpenStack for streamlined integration.
 ### Java Programming Language
 
 The selection of Java as the programming language for this project was 
-driven by several compelling reasons. Firstly, Java's platform independence
-was deemed crucial, ensuring the application's ability to run seamlessly 
-across various platforms. Additionally, Java was a project prerequisite and
-boasts excellent performance. 
+driven by several compelling reasons. Firstly, Java's platform 
+independence was deemed crucial, ensuring the application's ability to
+run seamlessly across various platforms. Additionally, Java was a project
+prerequisite and boasts excellent performance. 
 
 ### RabbitMQ Message Broker Software
 
-For the implementation of this application, the integration of a messaging bus was essential to
-facilitate testing. To transmit binary data between different clouds within the OpenStack environment,
+For the implementation of this application, the integration of a 
+messaging bus was essential to facilitate testing. To transmit binary 
+data between different clouds within the OpenStack environment,
 RabbitMQ was chosen as the appropriate message broker software.
 
-This decision was guided by the seamless integration with OpenStack, which already utilizes RabbitMQ 
-for communication among its various components such as Neutron, Nova, and Horizon. Opting for RabbitMQ
-aimed to streamline the integration process and ensure compatibility within the OpenStack cloud 
-environment.
+This decision was guided by the seamless integration with OpenStack, 
+which already utilizes RabbitMQ for communication among its various 
+components such as Neutron, Nova, and Horizon. Opting for RabbitMQ
+aimed to streamline the integration process and ensure compatibility 
+within the OpenStack cloud environment.
 
 ---
 
@@ -211,71 +214,107 @@ environment.
             ├── DataInterchangeTester.java
 ```
 
+## Data Sets
+
+The project utilizes various data sets to demonstrate its capabilities
+and test performance across different scenarios. Below are the key data
+sets employed in the testing and evaluation of the application:
+
+#### Small Data Set:
+
+<b>Description:</b> A small-sized data set designed to assess the 
+application's performance under minimal data loads.<br>
+
+<b>Usage:</b> Ideal for quick testing and initial system validation.
+
+#### Medium Data Set:
+
+<b>Description:</b> A moderately sized data set representing a more 
+realistic workload.
+
+<b>Usage:</b> Provides a balance between performance testing and
+simulation of real-world data volumes.
+
+#### Large Data Set:
+
+<b>Description:</b> A substantial data set designed to evaluate the 
+application's scalability and efficiency with large volumes of monitoring 
+data.
+
+<b>Usage:</b> Intended for comprehensive performance testing and stress-
+testing the system's handling of significant data loads. 
+
+These data sets, varying in size, enable a thorough assessment of the 
+application's functionality and performance across different scales. Users
+can select the appropriate data set based on their testing requirements 
+and scenarios. Detailed information on the data set formats and structures
+can be found in the project's documentation.
+
 ##  Getting Started
 
-***Requirements***
+***To get started with the project, follow the steps outlined below***
 
+### Prerequisites
 Ensure you have the following dependencies installed on your system:
 
-* **Java**: `version 21`
-* **RabbitMQ**: `version 3.12.11`
+* **Java**: `version 21` The project is developed in Java, and you will
+need a compatible Java Runtime Environment (JRE) installed.
+* **RabbitMQ**: `version 3.12.11` As the project utilizes RabbitMQ for 
+messaging, make sure to install and configure RabbitMQ on your system.
 
 ###  Installation
 
-1. Clone the interoperability-of-cloud-monitoring-Data repository:
+1. Clone the repository to your local machine:
 
 ```sh
 git clone https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git
 ```
 
-2. Change to the project directory:
+2. Navigate to the project directory:
 
 ```sh
-cd interoperability-of-cloud-monitoring-Data
+cd interoperability-of-cloud-monitoring-data
 ```
 
-3. Update the config/broker and config/sender files with your RabbitMQ credentials and settings.
+3. Build the project using your preferred build tool (Ant):
 
 ```sh
-
-# This file contains the configurations for the message broker.
-
-# Set the IP address of the broker host.
-hostIP=localhost
-rabbitPort=15672
-
-# Login details for Rabbitmq client on the server.
-rabbitUser=guest
-rabbitPass=guest
-
+ant compile
 ```
 
-4. Run the RabbitMQ service on your local machine (Mac)
+### Configuration
+
+Configure RabbitMQ:
+
+1. Update the RabbitMQ connection details in the project configuration
+files(`broker.properties` and `sender.properties`).
+
+
+2. Run the RabbitMQ service on your local machine (Mac)
 
 ```sh
 brew services start rabbitmq
 ```
-5. Run the MsgRecieverMain to start listening for data being sent through RabbitMQ.
 
-```sh
-mvn clean install
-```
+### Running The Application
 
-###  Running interoperability-of-cloud-monitoring-Data
+1. Run the `MsgRecieverMain.java` file to start listening for data being sent 
+through RabbitMQ.
 
-Use the following command to run interoperability-of-cloud-monitoring-Data:
+2. Run the `MsgSenderMain.java` file to start sending data through RabbitMQ.
 
-```sh
-java -jar target/myapp.jar
-```
+### Usage
+Once the application is running, you can:
+
+Experiment with different data sets by providing input in various formats.
+Monitor the serialization and deserialization processes over the cmd line.
+Evaluate the efficiency of different serialization formats with the provided
+data sets. Refer to the project documentation for detailed information on 
+available commands, configuration options, and additional features.
 
 ###  Tests
 
-To execute tests, run:
-
-```sh
-mvn test
-```
+To execute tests run the `DataInterchangeTester.java` file.
 
 ---
 
