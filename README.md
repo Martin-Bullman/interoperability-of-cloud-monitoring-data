@@ -1,19 +1,24 @@
 <p align="center">
-  <img src="https://www.ucc.ie/en/media/2017siteassets/images/ucc_logo_irish.svg" width="400" />
+    <img src="https://elementsofai.s3.amazonaws.com/EoAI-IE-UCC-grey.png" width="500" alt="University College Cork Logo" />
 </p>
-<p align="center">
-    <h1 align="center">INTEROPERABILITY-OF-CLOUD-MONITORING-DATA</h1>
-</p>
+
+<h1 align="center">
+    Interoperability of Cloud Monitoring Data
+</h1>
+
 <p align="center">
     <em>Error generating text for slogan: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429</em>
+   For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429</em>
 </p>
+
 <p align="center">
-	<img src="https://img.shields.io/github/license/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git?style=default&color=0080ff" alt="license">
-	<img src="https://img.shields.io/github/last-commit/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git?style=default&color=0080ff" alt="last-commit">
-	<img src="https://img.shields.io/github/languages/top/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git?style=default&color=0080ff" alt="repo-top-language">
-	<img src="https://img.shields.io/github/languages/count/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git?style=default&color=0080ff" alt="repo-language-count">
+	<img src="https://img.shields.io/github/license/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="last-commit">
+    <img src="https://img.shields.io/github/last-commit/Martin-Bullman/interoperability-of-cloud-monitoring-Data/main?style=flat" alt="license">
+    <img src="https://img.shields.io/github/languages/top/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="repo-top-language">
+    <img src="https://img.shields.io/github/languages/count/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="repo-language-count">
+    <img src="https://img.shields.io/github/issues/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="repo-language-count">
 <p>
+
 <p align="center">
 	<!-- default option, no dependency badges. -->
 </p>
@@ -38,8 +43,19 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 
 ##  Overview
 
-Error generating text for overview: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+The main aim of this project is to implement a new platform-independent
+and efficient data interchange format for serializing and structuring 
+cloud monitoring data to enable interoperability and easy management of
+multi cloud service deployments. The newly implemented data interchange 
+format will be integrated into an existing monitoring system to evaluate
+its performance in an OpenStack cloud platform.
+
+This project is also trying solve the problem of vendor lock-in where
+companies and users of cloud computing resources are tied to a single
+cloud service provider. Customer using a product or service cannot easily
+transition to a competitor's product or service as the costs may be too
+high. Vendor lock in is usually the result of proprietary technologies
+that are incompatible with those of competitors.
 
 ---
 
