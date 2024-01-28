@@ -8,16 +8,19 @@
 
 <p align="center">
     <em>
-        In the dynamic landscape of cloud computing, effective monitoring is vital for real-time insights.
-        However, the surge in diverse monitoring tools has led to incompatible data interchange formats. 
-        This project addresses this challenge by systematically evaluating and selecting efficient 
-        human-readable and binary serialization options, resulting in a novel data interchange format.
+        In the dynamic landscape of cloud computing, effective monitoring
+        is vital for real-time insights. However, the surge in diverse 
+        monitoring tools has led to incompatible data interchange formats.
+        This project addresses this challenge by systematically evaluating 
+        and selecting efficient human-readable and binary serialization 
+        options, resulting in a novel data interchange format.
    </em>
 </p>
 
 <p align="center">
     <em>
-        The project and its findings where also Published in: 2016 5th IEEE International Conference on Cloud Networking (Cloudnet)
+        The project and its findings where also Published in: 2016 5th IEEE
+        International Conference on Cloud Networking (CloudNet)
     </em>
 </p>
 
@@ -31,13 +34,9 @@
 	<img src="https://img.shields.io/github/license/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="last-commit">
     <img src="https://img.shields.io/github/last-commit/Martin-Bullman/interoperability-of-cloud-monitoring-Data/main?style=flat" alt="license">
     <img src="https://img.shields.io/github/languages/top/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="repo-top-language">
-    <img src="https://img.shields.io/github/languages/count/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="repo-language-count">
     <img src="https://img.shields.io/github/issues/Martin-Bullman/interoperability-of-cloud-monitoring-Data" alt="repo-language-count">
 <p>
 
-<p align="center">
-	<!-- default option, no dependency badges. -->
-</p>
 <hr>
 
 ##  Quick Links
@@ -45,12 +44,10 @@
 > - [ Overview](#-overview)
 > - [ Features](#-features)
 > - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
 > - [ Getting Started](#-getting-started)
 >   - [ Installation](#-installation)
 >   - [ Running interoperability-of-cloud-monitoring-Data](#-running-interoperability-of-cloud-monitoring-Data)
 >   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
 > - [ Contributing](#-contributing)
 > - [ License](#-license)
 > - [ Acknowledgments](#-acknowledgments)
@@ -76,28 +73,142 @@ high.
 
 ##  Features
 
-Error generating text for features: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+1. <b>Efficient Data Interchange Formats:</b> Development of a new data 
+interchange format for serializing and structuring cloud monitoring data. 
+Focus on enhancing efficiency, interoperability, and
+ease of management in multi-cloud service deployments. 
+
+
+2. <b>Human Readable Data Formats:</b> Ability to handle diverse 
+human-readable data interchange formats, including JSON, CSV, XML, HashMap,
+and ArrayList. Seamless conversion between different formats.
+
+
+3. <b>Binary Data Formats:</b> Implementation of various binary 
+serialization formats, such as MessagePack, Java, Hessian, CBOR, BSON,
+and KRYO. Goal to minimize data size for efficient transmission across 
+networks.
+
+
+4. <b>Dynamic Data Recognition:</b> Intelligent application capable of 
+recognizing the format of input data and determining the most efficient
+serialization format. 
+
+
+5. <b>Cloud Communication RabbitMQ:</b> Integration with RabbitMQ as a
+message broker for transmitting binary data between different clouds.
+Leveraging RabbitMQ's role in OpenStack for streamlined integration.
+
+---
+
+##  Technologies Used
+
+### Java Programming Language
+
+The selection of Java as the programming language for this project was 
+driven by several compelling reasons. Firstly, Java's platform independence
+was deemed crucial, ensuring the application's ability to run seamlessly 
+across various platforms. Additionally, Java was a project prerequisite and
+boasts excellent performance. 
+
+### RabbitMQ Message Broker Software
+
+For the implementation of this application, the integration of a messaging bus was essential to
+facilitate testing. To transmit binary data between different clouds within the OpenStack environment,
+RabbitMQ was chosen as the appropriate message broker software.
+
+This decision was guided by the seamless integration with OpenStack, which already utilizes RabbitMQ 
+for communication among its various components such as Neutron, Nova, and Horizon. Opting for RabbitMQ
+aimed to streamline the integration process and ensure compatibility within the OpenStack cloud 
+environment.
 
 ---
 
 ##  Repository Structure
 
 ```sh
-└── interoperability-of-cloud-monitoring-Data/
+└── interoperability-of-cloud-monitoring-data
     ├── config
+        ├── broker.properties
+        ├── sender.properties
     ├── datafiles
+        ├── apache_monitor_data.csv
+        ├── large_json_data.json
+        ├── large_metric_csv_data.csv
+        ├── large_xml_data.xml
+        ├── medium_json_data.json
+        ├── medium_metric_csv_data.csv
+        ├── medium_xml_data.xml
+        ├── one_week_resource_metrics.csv 
+        ├── resource_metric.csv
+        ├── small_json_data.json
+        ├── small_metric_csv_data.csv
+        ├── small_xml_data.xml
     ├── docs
+        ├── evaluation_of_binary_serialization_formats .docx
+        ├── interoperability_of_cloud_monitoring_data_fyp_report.pdf
+        ├── management_for_federated_cloud_services.pdf
     ├── lib
+        ├── bson4jackson-2.7.0.jar
+        ├── cbor-0.4.jar
+        ├── cbor-java-master.jar
+        ├── hessian-4.0.33.jar
+        ├── jackson-annotations-2.7.0.jar
+        ├── jackson-core-2.7.0.jar
+        ├── jackson-databind-2.7.0-rc1.jar
+        ├── jackson-dataformat-cbor-2.5.2.jar
+        ├── jackson-dataformat-csv-2.7.0.jar
+        ├── jackson-dataformat-yaml-2.5.1.jar
+        ├── javassist-3.12.1.GA.jar
+        ├── jsonSimple.jar
+        ├── kryo-2.24.0.jar
+        ├── minlog-1.2.jar
+        ├── msgpack-0.6.12.jar
+        ├── objenesis-1.2.jar
+        ├── rabbitmq-client.jar
     └── src
         └── main
             ├── deserializers
+                ├── BsonDeserializer.java
+                ├── CborDeserializer.java
+                ├── HessianDeserializer.java
+                ├── JavaDeserializer.java
+                ├── KryoDeserializer.java
+                ├── MessagePackDeserializer.java
             ├── formatters
-            ├── formatters
+                ├── ArrayListFormatter.java
+                ├── CsvFormatter.java
+                ├── DataInterchangeFormatter.java
+                ├── HashMapFormatter.java
+                ├── IArrayListFormatter.java
+                ├── ICsvFormatter.java
+                ├── IHashMapFormatter.java
+                ├── IJsonFormatter.java
+                ├── IXmlFormatter.java
+                ├── JsonFormatter.java
+                ├── XmlFormatter.java
             ├── helpers
+                ├── FileHelper.java
+                ├── MapConverter.java
             ├── message_receiver
+                ├── LowLevelMsgFormat.java
+                ├── LowLevelResourceMetrics.java
+                ├── MessageReceiver.java
+                ├── MetricNames.java
+                ├── Misc.java
+                ├── MsgReceiverMain.java
             ├── message_sender
+                ├── MessageSender.java
+                ├── MessageSenderMain.java
             └── serializers
+                ├── BsonSerializer.java
+                ├── CborSerializer.java
+                ├── HessianSerializer.java
+                ├── JavaSerializer.java
+                ├── KryoSerializer.java
+                ├── MessagePackSerializer.java
+        └── tests 
+            ├── DataInterchangeTester.java
 ```
 
 ##  Getting Started
@@ -106,7 +217,8 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 
 Ensure you have the following dependencies installed on your system:
 
-* **Java**: `version x.y.z`
+* **Java**: `version 21`
+* **RabbitMQ**: `version 3.12.11`
 
 ###  Installation
 
@@ -122,7 +234,28 @@ git clone https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring
 cd interoperability-of-cloud-monitoring-Data
 ```
 
-3. Install the dependencies:
+3. Update the config/broker and config/sender files with your RabbitMQ credentials and settings.
+
+```sh
+
+# This file contains the configurations for the message broker.
+
+# Set the IP address of the broker host.
+hostIP=localhost
+rabbitPort=15672
+
+# Login details for Rabbitmq client on the server.
+rabbitUser=guest
+rabbitPass=guest
+
+```
+
+4. Run the RabbitMQ service on your local machine (Mac)
+
+```sh
+brew services start rabbitmq
+```
+5. Run the MsgRecieverMain to start listening for data being sent through RabbitMQ.
 
 ```sh
 mvn clean install
@@ -143,14 +276,6 @@ To execute tests, run:
 ```sh
 mvn test
 ```
-
----
-
-##  Project Roadmap
-
-- [X] `► INSERT-TASK-1`
-- [ ] `► INSERT-TASK-2`
-- [ ] `► ...`
 
 ---
 
@@ -195,19 +320,18 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data/blob/main/LICENSE.md) file for details.
 
 ---
 
 ##  Acknowledgments
 I would like to express my deepest appreciation to all those who provided me the possibility to complete this 
 project and the accompanying report. A special gratitude I give to our final year project mentor Dr Vincent C.
-Emeakaroha, whose contribution in stimulating suggestions and encouragement, helped me to coordinate my project 
-especially in writing this report. 
+Emeakaroha, whose contribution in stimulating suggestions and encouragement, helped me to coordinate my project.
 
 Furthermore, I would also like to acknowledge with much appreciation the crucial role of the Systems Support
-Staff of the UCC computer science department and my mentor Vincent, who gave the permission to use all required 
-equipment and the necessary materials to complete the Interoperability of Cloud Monitoring Data project.
+Staff of the UCC computer science department, who gave the permission to use all required equipment and the
+necessary materials to complete the Interoperability of Cloud Monitoring Data project.
   
 Finally, many thanks go to the supervisor of the project, Prof John Morrison who invested his full effort in
 guiding me in achieving the goal of completing this project. I have to also appreciate the guidance and help given
