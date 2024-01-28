@@ -7,8 +7,24 @@
 </h1>
 
 <p align="center">
-    <em>Error generating text for slogan: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-   For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429</em>
+    <em>
+        In the dynamic landscape of cloud computing, effective monitoring is vital for real-time insights.
+        However, the surge in diverse monitoring tools has led to incompatible data interchange formats. 
+        This project addresses this challenge by systematically evaluating and selecting efficient 
+        human-readable and binary serialization options, resulting in a novel data interchange format.
+   </em>
+</p>
+
+<p align="center">
+    <em>
+        The project and its findings where also Published in: 2016 5th IEEE International Conference on Cloud Networking (Cloudnet)
+    </em>
+</p>
+
+<p align="center">
+    <a href="https://ieeexplore.ieee.org/document/7776594">IEEE Publication</a> | 
+    <a href="https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data/blob/main/docs/management_for_federated_cloud_services.pdf">Research Paper</a> |
+    <a href="https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data/blob/main/docs/interoperability_of_cloud_monitoring_data_fyp_report.pdf">FYP Report</a>
 </p>
 
 <p align="center">
@@ -54,8 +70,7 @@ This project is also trying solve the problem of vendor lock-in where
 companies and users of cloud computing resources are tied to a single
 cloud service provider. Customer using a product or service cannot easily
 transition to a competitor's product or service as the costs may be too
-high. Vendor lock in is usually the result of proprietary technologies
-that are incompatible with those of competitors.
+high.
 
 ---
 
@@ -70,159 +85,20 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 
 ```sh
 └── interoperability-of-cloud-monitoring-Data/
+    ├── config
     ├── datafiles
-    │   ├── data.text
-    │   ├── large_json_data.json
-    │   ├── medium_json_data.json
-    │   └── small_json_data.json
+    ├── docs
     ├── lib
     └── src
         └── main
             ├── deserializers
+            ├── formatters
             ├── formatters
             ├── helpers
             ├── message_receiver
             ├── message_sender
             └── serializers
 ```
-
----
-
-##  Modules
-
-<details closed><summary>.</summary>
-
-| File                                                                                                                 | Summary                                                                                                                                                                                                                  |
-| ---                                                                                                                  | ---                                                                                                                                                                                                                      |
-| [.gitignore](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/.gitignore) | Error generating text for .gitignore: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-
-</details>
-
-<details closed><summary>datafiles</summary>
-
-| File                                                                                                                                                 | Summary                                                                                                                                                                                                                                       |
-| ---                                                                                                                                                  | ---                                                                                                                                                                                                                                           |
-| [large_json_data.json](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/datafiles/large_json_data.json)   | Error generating text for datafiles/large_json_data.json: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429  |
-| [medium_json_data.json](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/datafiles/medium_json_data.json) | Error generating text for datafiles/medium_json_data.json: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-| [small_json_data.json](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/datafiles/small_json_data.json)   | Error generating text for datafiles/small_json_data.json: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429  |
-| [data.text](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/datafiles/data.text)                         | Error generating text for datafiles/data.text: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429             |
-
-</details>
-
-<details closed><summary>src.main.deserializers</summary>
-
-| File                                                                                                                                                                            | Summary                                                                                                                                                                                                                                                           |
-| ---                                                                                                                                                                             | ---                                                                                                                                                                                                                                                               |
-| [BsonDeserializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/deserializers/BsonDeserializer.java)               | Error generating text for src/main/deserializers/BsonDeserializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [HessianDeserializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/deserializers/HessianDeserializer.java)         | Error generating text for src/main/deserializers/HessianDeserializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429     |
-| [KryoDeserializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/deserializers/KryoDeserializer.java)               | Error generating text for src/main/deserializers/KryoDeserializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [JavaDeserializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/deserializers/JavaDeserializer.java)               | Error generating text for src/main/deserializers/JavaDeserializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [MessagePackDeserializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/deserializers/MessagePackDeserializer.java) | Error generating text for src/main/deserializers/MessagePackDeserializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-| [CborDeserializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/deserializers/CborDeserializer.java)               | Error generating text for src/main/deserializers/CborDeserializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-
-</details>
-
-<details closed><summary>src.main.message_receiver</summary>
-
-| File                                                                                                                                                                               | Summary                                                                                                                                                                                                                                                              |
-| ---                                                                                                                                                                                | ---                                                                                                                                                                                                                                                                  |
-| [LowLevelResourceMetrics.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_receiver/LowLevelResourceMetrics.java) | Error generating text for src/main/message_receiver/LowLevelResourceMetrics.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-| [LowLevelMsgFormat.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_receiver/LowLevelMsgFormat.java)             | Error generating text for src/main/message_receiver/LowLevelMsgFormat.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429       |
-| [MsgReceiverMain.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_receiver/MsgReceiverMain.java)                 | Error generating text for src/main/message_receiver/MsgReceiverMain.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429         |
-| [MessageReceiver.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_receiver/MessageReceiver.java)                 | Error generating text for src/main/message_receiver/MessageReceiver.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429         |
-| [Misc.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_receiver/Misc.java)                                       | Error generating text for src/main/message_receiver/Misc.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429                    |
-| [MetricNames.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_receiver/MetricNames.java)                         | Error generating text for src/main/message_receiver/MetricNames.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429             |
-
-</details>
-
-<details closed><summary>src.main.formatters</summary>
-
-| File                                                                                                                                                                           | Summary                                                                                                                                                                                                                                                         |
-| ---                                                                                                                                                                            | ---                                                                                                                                                                                                                                                             |
-| [ArrayListFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/ArrayListFormatter.java)             | Error generating text for src/main/formatters/ArrayListFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429       |
-| [ICsvFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/ICsvFormatter.java)                       | Error generating text for src/main/formatters/ICsvFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429            |
-| [XmlFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/XmlFormatter.java)                         | Error generating text for src/main/formatters/XmlFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429             |
-| [DataInterchangeFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/DataInterchangeFormatter.java) | Error generating text for src/main/formatters/DataInterchangeFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-| [CsvFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/CsvFormatter.java)                         | Error generating text for src/main/formatters/CsvFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429             |
-| [IXmlFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/IXmlFormatter.java)                       | Error generating text for src/main/formatters/IXmlFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429            |
-| [IHashMapFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/IHashMapFormatter.java)               | Error generating text for src/main/formatters/IHashMapFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [IJsonFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/IJsonFormatter.java)                     | Error generating text for src/main/formatters/IJsonFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429           |
-| [JsonFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/JsonFormatter.java)                       | Error generating text for src/main/formatters/JsonFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429            |
-| [IArrayListFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/IArrayListFormatter.java)           | Error generating text for src/main/formatters/IArrayListFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429      |
-| [HashMapFormatter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/formatters/HashMapFormatter.java)                 | Error generating text for src/main/formatters/HashMapFormatter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429         |
-
-</details>
-
-<details closed><summary>src.main.serializers</summary>
-
-| File                                                                                                                                                                      | Summary                                                                                                                                                                                                                                                       |
-| ---                                                                                                                                                                       | ---                                                                                                                                                                                                                                                           |
-| [BsonSerializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/serializers/BsonSerializer.java)               | Error generating text for src/main/serializers/BsonSerializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [MessagePackSerializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/serializers/MessagePackSerializer.java) | Error generating text for src/main/serializers/MessagePackSerializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-| [KryoSerializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/serializers/KryoSerializer.java)               | Error generating text for src/main/serializers/KryoSerializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [JavaSerializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/serializers/JavaSerializer.java)               | Error generating text for src/main/serializers/JavaSerializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-| [HessianSerializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/serializers/HessianSerializer.java)         | Error generating text for src/main/serializers/HessianSerializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429     |
-| [CborSerializer.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/serializers/CborSerializer.java)               | Error generating text for src/main/serializers/CborSerializer.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429        |
-
-</details>
-
-<details closed><summary>src.main.message_sender</summary>
-
-| File                                                                                                                                                                 | Summary                                                                                                                                                                                                                                                      |
-| ---                                                                                                                                                                  | ---                                                                                                                                                                                                                                                          |
-| [MessageSender.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_sender/MessageSender.java)         | Error generating text for src/main/message_sender/MessageSender.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429     |
-| [MessageSenderMain.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/message_sender/MessageSenderMain.java) | Error generating text for src/main/message_sender/MessageSenderMain.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-
-</details>
-
-<details closed><summary>src.main.helpers</summary>
-
-| File                                                                                                                                                | Summary                                                                                                                                                                                                                                          |
-| ---                                                                                                                                                 | ---                                                                                                                                                                                                                                              |
-| [FileHelper.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/helpers/FileHelper.java)     | Error generating text for src/main/helpers/FileHelper.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429   |
-| [MapConverter.java](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/master/src/main/helpers/MapConverter.java) | Error generating text for src/main/helpers/MapConverter.java: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'
-For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429 |
-
-</details>
-
----
 
 ##  Getting Started
 
@@ -315,15 +191,28 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ---
 
-##  License
+## License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 ##  Acknowledgments
+I would like to express my deepest appreciation to all those who provided me the possibility to complete this 
+project and the accompanying report. A special gratitude I give to our final year project mentor Dr Vincent C.
+Emeakaroha, whose contribution in stimulating suggestions and encouragement, helped me to coordinate my project 
+especially in writing this report. 
 
-- List any resources, contributors, inspiration, etc. here.
+Furthermore, I would also like to acknowledge with much appreciation the crucial role of the Systems Support
+Staff of the UCC computer science department and my mentor Vincent, who gave the permission to use all required 
+equipment and the necessary materials to complete the Interoperability of Cloud Monitoring Data project.
+  
+Finally, many thanks go to the supervisor of the project, Prof John Morrison who invested his full effort in
+guiding me in achieving the goal of completing this project. I have to also appreciate the guidance and help given
+by other lecturing staff with in the computer science department here in UCC, which was invaluable to the 
+success of my final year project.
 
 [**Return**](#-quick-links)
 
