@@ -44,7 +44,7 @@
 > - [Overview](#overview)
 > - [Features](#features)
 > - [Repository Structure](#repository-structure)
-> -  [Data Sets](#data-sets)
+> - [Data Sets](#data-sets)
 >   -  [Small Data Sets](#small-data-set)
 >   -  [Medium Data Sets](#medium-data-set)
 >   -  [Large Data Sets](#large-data-set)
