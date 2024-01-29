@@ -273,7 +273,7 @@ messaging, make sure to install and configure RabbitMQ on your system.
 1. Clone the repository to your local machine:
 
 ```sh
-git clone https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git
+git clone https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-data.git
 ```
 
 2. Navigate to the project directory:
@@ -329,18 +329,23 @@ To execute tests run the `DataInterchangeTester.java` file.
 Contributions are welcome! Here are several ways you can contribute:
 
 - **[Submit Pull Requests](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/issues)**: Submit bugs found or log feature requests for Interoperability-of-cloud-monitoring-data.
+- **[Join the Discussions](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/discussions)**: Share your insights, provide feedback, or ask 
+questions.
+- **[Report Issues](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/issues)**: Submit bugs found or log feature requests for 
+Interoperability-of-cloud-monitoring-data.
 
 <details closed>
     <summary>Contributing Guidelines</summary>
 
-1. **Fork the Repository**: Start by forking the project repository to your GitHub account.
-2. **Clone Locally**: Clone the forked repository to your local machine using a Git client.
+1. **Fork the Repository**: Start by forking the project repository to your 
+GitHub account.
+2. **Clone Locally**: Clone the forked repository to your local machine using a
+Git client.
    ```sh
-   git clone https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git
+   git clone https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-data.git
    ```
-3. **Create a New Branch**: Always work on a new branch, giving it a descriptive name.
+3. **Create a New Branch**: Always work on a new branch, giving it a descriptive
+name.
    ```sh
    git checkout -b new-feature-x
    ```
@@ -353,7 +358,8 @@ Contributions are welcome! Here are several ways you can contribute:
    ```sh
    git push origin new-feature-x
    ```
-7. **Submit a Pull Request**: Create a PR against the original project repository. Clearly describe the changes and their motivations.
+7. **Submit a Pull Request**: Create a PR against the original project 
+repository. Clearly describe the changes and their motivations.
 
 Once your PR is reviewed and approved, it will be merged into the main branch.
 
@@ -365,24 +371,30 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data/blob/main/LICENSE.md) file for details.
+This project is licensed under the MIT License - see the 
+[LICENSE](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-Data/blob/main/LICENSE.md) 
+file for details.
 
 ---
 
 ##  Acknowledgments
-I would like to express my deepest appreciation to all those who provided me the possibility to complete this 
-project and the accompanying report. A special gratitude I give to our final year project mentor Dr Vincent C.
-Emeakaroha, whose contribution in stimulating suggestions and encouragement, helped me to coordinate my project.
+I would like to express my deepest appreciation to all those who provided me the
+possibility to complete this project and the accompanying report. A special 
+gratitude I give to our final year project mentor Dr Vincent C. Emeakaroha,
+whose contribution in stimulating suggestions and encouragement, helped me to
+coordinate my project.
 
-Furthermore, I would also like to acknowledge with much appreciation the crucial role of the Systems Support
-Staff of the UCC computer science department, who gave the permission to use all required equipment and the
-necessary materials to complete the Interoperability of Cloud Monitoring Data project.
+Furthermore, I would also like to acknowledge with much appreciation the crucial
+role of the Systems Support Staff of the UCC computer science department, who
+gave the permission to use all required equipment and the necessary materials
+to complete the Interoperability of Cloud Monitoring Data project.
   
-Finally, many thanks go to the supervisor of the project, Prof John Morrison who invested his full effort in
-guiding me in achieving the goal of completing this project. I have to also appreciate the guidance and help given
-by other lecturing staff with in the computer science department here in UCC, which was invaluable to the 
-success of my final year project.
+Finally, many thanks go to the supervisor of the project, Prof John Morrison 
+who invested his full effort in guiding me in achieving the goal of completing 
+this project. I have to also appreciate the guidance and help given by other
+lecturing staff with in the computer science department here in UCC, which was
+invaluable to the success of my final year project.
 
-[**Return**](#-quick-links)
+[**Return**](#quick-links)
 
 ---
