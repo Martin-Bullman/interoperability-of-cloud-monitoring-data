@@ -19,7 +19,7 @@
 
 <p align="center">
     <em>
-        The project and its findings where also Published in: 2016 5th IEEE
+        The project and its findings where published in: 2016 5th IEEE
         International Conference on Cloud Networking (CloudNet)
     </em>
 </p>
@@ -43,6 +43,7 @@
 
 > - [Overview](#overview)
 > - [Features](#features)
+> - [Technologies Used](#technologies-used)
 > - [Repository Structure](#repository-structure)
 > - [Data Sets](#data-sets)
 >   -  [Small Data Sets](#small-data-set)
@@ -53,8 +54,8 @@
 >   - [Installation](#installation)
 >   - [Configuration](#configuration)
 >   - [Running The Application](#running-the-application)
->   - [Usage](#usage)
 >   - [Test](#tests)
+>   - [Usage](#usage)
 > - [Contributing](#contributing)
 > - [License](#license)
 > - [Acknowledgments](#acknowledgments)
@@ -80,7 +81,7 @@ high.
 
 ##  Features
 
-1. <b>Efficient Data Interchange Formats:</b> Development of a new data 
+1. <b>Efficient Data Interchange Format:</b> Development of a new data 
 interchange format for serializing and structuring cloud monitoring data. 
 Focus on enhancing efficiency, interoperability, and
 ease of management in multi-cloud service deployments. 
@@ -309,6 +310,11 @@ through RabbitMQ.
 
 2. Run the `MsgSenderMain.java` file to start sending data through RabbitMQ.
 
+###  Tests
+
+To execute tests run the `DataInterchangeTester.java` file.
+
+
 ### Usage
 Once the application is running, you can:
 
@@ -318,10 +324,6 @@ Evaluate the efficiency of different serialization formats with the provided
 data sets. Refer to the project documentation for detailed information on 
 available commands, configuration options, and additional features.
 
-###  Tests
-
-To execute tests run the `DataInterchangeTester.java` file.
-
 ---
 
 ##  Contributing
@@ -329,9 +331,9 @@ To execute tests run the `DataInterchangeTester.java` file.
 Contributions are welcome! Here are several ways you can contribute:
 
 - **[Submit Pull Requests](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/discussions)**: Share your insights, provide feedback, or ask 
+- **[Join the Discussions](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-data/discussions)**: Share your insights, provide feedback, or ask 
 questions.
-- **[Report Issues](https://github/Martin-Bullman/interoperability-of-cloud-monitoring-Data.git/issues)**: Submit bugs found or log feature requests for 
+- **[Report Issues](https://github.com/Martin-Bullman/interoperability-of-cloud-monitoring-data/issues)**: Submit bugs found or log feature requests for 
 Interoperability-of-cloud-monitoring-data.
 
 <details closed>
@@ -395,6 +397,4 @@ this project. I have to also appreciate the guidance and help given by other
 lecturing staff with in the computer science department here in UCC, which was
 invaluable to the success of my final year project.
 
-[**Return**](#quick-links)
-
----
+[**Return To Quick Links**](#quick-links)
